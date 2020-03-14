@@ -1,0 +1,22 @@
+<html>
+<body>
+<script type="text/javascript">
+	function check(datakey,word) {
+	let sample = word;
+	for (let i = 0; i < 4;i++){
+	if (sample.includes(datakey[i]) == true) {
+		document.write(datakey[i]+"=> true");
+		document.write("<br>");
+	} else {
+		document.write(datakey[i]+"=> false");
+		document.write("<br>");
+	}
+	}
+	}
+	var datakey = ['dumb','ways','the','best'];
+	var word = 'dumbways';
+	document.write(check(datakey,word));
+</script>
+
+</body>
+</html>

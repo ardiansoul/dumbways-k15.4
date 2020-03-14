@@ -1,0 +1,45 @@
+<html>
+<body>
+	<script type="text/javascript">
+	function cetak_gambar(ukuran) {
+		if (!ukuran % 2 ==0) {
+
+		for (let j = 0;j < ukuran; j++){
+			for (let i = 0;i<ukuran;i++){
+				if ((j % 2 == 0 && i % 2 == 0) || (j % 2 == 1 && i % 2 == 1)) {
+				document.write("=");
+				document.write("&nbsp");
+				document.write("&nbsp");
+				document.write("&nbsp");
+				document.write("&nbsp");
+				} else {
+				document.write("*");
+				document.write("&nbsp");
+				document.write("&nbsp");
+				document.write("&nbsp");
+				document.write("&nbsp");
+				}
+			}
+				document.write("<br>");
+		}
+		// for(let j = 0;j < ukuran; j++){
+		// for (let i = 0; i < ukuran ; i++){
+		// 	if (i % 2 == 0) {
+		// 		document.write("*");
+		// 		document.write("&nbsp");
+		// 		document.write("&nbsp");
+		// 	} else {
+		// 		document.write("=");
+		// 		document.write("&nbsp");
+		// 		document.write("&nbsp");
+		// 	}
+		// }
+		// 	document.write("<br>");}	
+		} else {
+			document.write("angka harus ganjil");
+		}
+	}
+	cetak_gambar(5);
+	</script>
+</body>
+</html>

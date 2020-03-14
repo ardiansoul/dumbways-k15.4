@@ -1,0 +1,20 @@
+<html>
+<body>
+<script type="text/javascript">
+	function tabungan(bulan) {
+		var uang = 2921690;
+		var bunga = uang * 0.021;
+
+		for (let i = 1;i <= bulan; i++) {
+			uang += bunga;
+			hasil = uang.toFixed(2);
+			document.write("bunga bulan ke-"+i+" adalah "+hasil);
+			document.write("<br>");
+		}
+	}
+
+	tabungan(12);
+</script>
+
+</body>
+</html>
